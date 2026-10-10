@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import barberImage from "../../../public/assests/image-1.jpg";
+import barberImage from "../../../public/assests/image-1.png";
 
 const Hero = () => {
   return (
@@ -12,6 +12,7 @@ const Hero = () => {
         src={barberImage}
         alt="آرایشگاه مردانه مهدی"
         className="absolute inset-0 h-full w-full object-cover object-center"
+        
       />
 
       {/* Dark Overlay */}

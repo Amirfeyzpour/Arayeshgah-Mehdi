@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="relative bg-black text-white">
 
       {/* Footer Image */}
-      <div className="relative w-full h-[600px] md:h-[650px] max-h-[700px] overflow-hidden">
+      <div className="relative w-full h-150 md:h-162 max-h-175 overflow-hidden">
 
         {/* Background */}
         <img
@@ -30,7 +30,7 @@ const Footer = () => {
 
 
         {/* Content */}
-        <div className="relative z-10 h-full flex items-center">
+        <div dir="ltr" className="relative z-10 h-full flex items-center">
 
           <div className="w-[88%] max-w-6xl mx-auto">
 
@@ -83,7 +83,7 @@ const Footer = () => {
                 </p>
 
                 <p>
-                  تهران، خیابان ولیعصر، بالاتر از میدان ونک
+                  تهران، میدان پونک
                 </p>
 
               </div>
@@ -107,14 +107,17 @@ const Footer = () => {
                   w-fit
                   px-5
                   py-2
+                  mt-3
                   bg-black/40
                   backdrop-blur-sm
+                  rounded-xl
                 ">
                   <a
                     href="tel:+09195756500"
                     className="
                       tracking-wider
-                      hover:text-gray-400
+                      hover:text-gray-100
+                    
                       transition
                     "
                   >
@@ -137,7 +140,7 @@ const Footer = () => {
                   WORKING HOURS
                 </p>
 
-                <p>
+                <p className="pl-7">
                   همه روزه  — ۱۰:۰۰ تا ۲۲:۰۰
                 </p>
 
@@ -189,7 +192,7 @@ const Footer = () => {
       ">
 
         <p className="text-gray-500 text-xs">
-          © 2026 BARBER — All Rights Reserved
+          © 2026 BARBER — All Rights Reserved - AMIRREZA FEIZPOUR
         </p>
 
         <div className="flex gap-6 text-xs text-gray-400">

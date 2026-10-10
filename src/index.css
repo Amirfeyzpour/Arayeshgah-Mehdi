@@ -1,2 +1,22 @@
 @import "tailwindcss";
 @plugin "daisyui";
+@layer base {
+  @font-face {
+    font-family: iransans;
+    font-style: normal;
+    src: url("@/fonts/iransans/eot/IRANSansFaNum_Medium.eot");
+    src:
+      url("@/fonts/iransans/eot/IRANSansFaNum_Medium.eot?#iefix")
+        format("embedded-opentype"),
+      url("@/fonts/iransans/woff2/IRANSansWebFaNum_Medium.woff2")
+        format("woff2"),
+      url("@/fonts/iransans/woff/IRANSansWebFaNum_Medium.woff") format("woff"),
+      url("@/fonts/iransans/ttf/IRANSansWebFaNum_Medium.ttf") format("truetype");
+  }
+
+  body {
+    font-family: iransans;
+    direction: rtl;
+    @apply min-h-screen flex flex-col;
+  }
+}

@@ -15,11 +15,15 @@ const Header = () => {
         >
           <h1>BARBER</h1>
 
-          <img className="w-14 h-14 object-contain" src={img} alt="Barber logo" />
+          <img
+            className="w-14 h-14 object-contain"
+            src={img}
+            alt="Barber logo"
+          />
         </Link>
 
         {/* Desktop Menu */}
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav dir="rtl" className="hidden items-center gap-8 md:flex">
           <Link to="/" className="text-sm transition hover:text-amber-400">
             صفحه اصلی
           </Link>
@@ -39,7 +43,7 @@ const Header = () => {
           </Link>
 
           <Link to="/about" className="text-sm transition hover:text-amber-400">
-            درباره ما
+            درباره من
           </Link>
 
           <Link
@@ -63,7 +67,7 @@ const Header = () => {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="text-2xl md:hidden"
+          className="text-2xl md:hidden cursor-pointer"
           aria-label="باز کردن منو"
         >
           {isMenuOpen ? "✕" : "☰"}
